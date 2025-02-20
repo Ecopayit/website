@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import ExchangeWidget from "@/components/exchange-widget"
 
 export const Route = createFileRoute('/')({
   component: Home
@@ -8,18 +9,19 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
+    <main className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
-          Buy Crypto Safely & Easily
-        </h1>
-        <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Your trusted platform for secure cryptocurrency purchases using your preferred fiat currency
-        </p>
-        <Button size="lg" className="text-lg px-8">
-          Start Trading
-        </Button>
+      <section className="container mx-auto px-4 py-24">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+            Buy Crypto Safely & Easily
+          </h1>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Your trusted platform for secure cryptocurrency purchases using your preferred fiat currency
+          </p>
+        </div>
+        
+        <ExchangeWidget />
       </section>
 
       {/* Features Section */}
@@ -94,6 +96,6 @@ function Home() {
           </Button>
         </Card>
       </section>
-    </div>
+    </main>
   )
 }
