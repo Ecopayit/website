@@ -176,3 +176,5 @@ dist
 
 # WindSurfRules
 .windsurfrules
+# Local Netlify folder
+.netlify
