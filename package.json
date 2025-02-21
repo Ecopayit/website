@@ -1,6 +1,6 @@
 {
   "name": "trinidapp",
-  "module": "index.ts",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
