@@ -1,34 +1,34 @@
 {
-  "_client-BD0x6cCO.js": {
-    "file": "assets/client-BD0x6cCO.js",
+  "/Users/jonasgraterol/Development/TRINIDAPP/website/app/styles/app.css": {
+    "file": "assets/app-CY7WGVNl.css",
+    "src": "/Users/jonasgraterol/Development/TRINIDAPP/website/app/styles/app.css"
+  },
+  "_client-D-2rl7ld.js": {
+    "file": "assets/client-D-2rl7ld.js",
     "name": "client",
     "dynamicImports": [
       "app/routes/index.tsx?tsr-split=component"
     ],
-    "css": [
-      "assets/client-CY7WGVNl.css"
+    "assets": [
+      "assets/app-CY7WGVNl.css"
     ]
   },
-  "_client-CY7WGVNl.css": {
-    "file": "assets/client-CY7WGVNl.css",
-    "src": "_client-CY7WGVNl.css"
-  },
   "app/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-Bnbz5fA8.js",
+    "file": "assets/index-DKTG0pJo.js",
     "name": "index",
     "src": "app/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_client-BD0x6cCO.js"
+      "_client-D-2rl7ld.js"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-CLP_h_y_.js",
+    "file": "assets/client-Bpvzk9ya.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
-      "_client-BD0x6cCO.js"
+      "_client-D-2rl7ld.js"
     ]
   }
 }

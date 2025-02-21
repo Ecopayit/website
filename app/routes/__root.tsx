@@ -6,17 +6,31 @@ import {
   Scripts,
 } from '@tanstack/react-router'
 
-import '@/styles/app.css'
+import appCss from '@/styles/app.css?url'
 
-const meta = [
-  { charSet: 'utf-8' },
-  { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-  { title: 'EcoPay - Secure Crypto Exchange' },
-]
+// Suppress hydration warnings for dynamic content
+const suppressHydrationWarning = { suppressHydrationWarning: true }
 
 export const Route = createRootRoute({
   head: () => ({
-    meta,
+    meta: [
+      {
+        charSet: 'utf-8',
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        title: 'EcoPay - Secure Crypto Exchange',
+      },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: appCss,
+      },
+    ],
   }),
   component: RootComponent,
   errorComponent: ({ error }) => (
@@ -40,11 +54,11 @@ function RootComponent() {
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
+    <html {...suppressHydrationWarning}>
+      <head {...suppressHydrationWarning}>
         <HeadContent />
       </head>
-      <body>
+      <body {...suppressHydrationWarning}>
         <div id="app">
           {children}
         </div>

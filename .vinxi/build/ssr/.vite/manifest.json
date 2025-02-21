@@ -1,4 +1,8 @@
 {
+  "/Users/jonasgraterol/Development/TRINIDAPP/website/app/styles/app.css": {
+    "file": "assets/app-CY7WGVNl.css",
+    "src": "/Users/jonasgraterol/Development/TRINIDAPP/website/app/styles/app.css"
+  },
   "app/routes/index.tsx?tsr-split=component": {
     "file": "assets/index-CsObXEje.js",
     "name": "index",
@@ -16,8 +20,8 @@
     "dynamicImports": [
       "app/routes/index.tsx?tsr-split=component"
     ],
-    "css": [
-      "assets/ssr-CY7WGVNl.css"
+    "assets": [
+      "assets/app-CY7WGVNl.css"
     ]
   }
 }
